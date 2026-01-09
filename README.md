@@ -7,9 +7,7 @@ This repository focuses only on the routing classification problem, not orchestr
 
 ## Goal
 
-Given a **single user query**, predict the **most appropriate subsystem** to handle the request, such as:
-
-### Example Queries
+Given a **single user query**, predict **which subsystem(s) are relevant** to handle the request.
 
 | User Query | Expected Subsystem(s) |
 |-----------|----------------------|
@@ -19,33 +17,25 @@ Given a **single user query**, predict the **most appropriate subsystem** to han
 
 ### Example Model Output
 
+ground truth:
+```json
+{
+  "material_knowledge": 1,
+  "regulation_lookup": 1,
+  "acquire_image_example": 0
+}
+```
+
+prediction:
 ```json
 {
   "material_knowledge": 0.82,
   "regulation_lookup": 0.91,
   "acquire_image_example": 0.05
 }
-
-
-The model is designed to be:
-- **Fast** (sub-100ms inference)
-- **Accurate** on domain-specific queries
-
+```
 
 ---
-
-## 🧠 Design Philosophy
-
-- This is **pure classification**
-- The model outputs **labels + confidence**, nothing else
-
-> Models extract signals.  
-> Orchestrators apply policy.
-
-
-## Model Scope
-
-- SLM or other text-classification model
 
 
 ## Evaluation Metrics
