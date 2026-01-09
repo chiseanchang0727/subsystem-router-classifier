@@ -1,0 +1,36 @@
+{"query": "不鏽鋼跟鑄鐵鋼有什麼差別啊", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "排水有什麼規範嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "排水管用 PVC 還是鑄鐵比較好？法規上有差嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "可以看一下不鏽鋼水管長什麼樣子嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "銅管跟鋁管哪個導熱比較好", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "排水系統有什麼法規標準啊", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "有沒有 PVC 管安裝的圖片可以參考", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "鑄鐵管可以用在哪裡？還有它的特性是什麼", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "不鏽鋼耐腐蝕嗎？法規有規定要用什麼材質嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "排水系統怎麼裝？有圖可以看嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 1}}
+{"query": "銅線跟鋁線導電差很多嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "電線規格法規有規定嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "配電箱要怎麼接線？有圖嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "PVC 電線管跟金屬的差在哪", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "接地系統有什麼要求", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "電線接頭怎麼裝？有範例圖嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 1}}
+{"query": "熱水管要用什麼材質？法規有說嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "電纜的絕緣材料有哪些", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "給水系統要用什麼管材？法規有規定嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "電路配線有標準圖可以看嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 1}}
+{"query": "設計的時候，消防水系統要注意什麼", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "設計時給排水要用什麼管材？法規有要求嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "施工時接地要怎麼做？有什麼規範要遵守嗎", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "審查時消防系統的管材跟安裝要檢查什麼？有圖可以看嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "設計時空調的冷媒管要用什麼材料？法規有限制嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "施工時弱電的線材跟佈線有什麼規範", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "審查時給水跟電氣的接地有符合法規嗎？要看什麼文件", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "設計時結構的鋼材跟消防的管材有什麼法規要求", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "施工時排水管跟電線有什麼要注意的？有圖可以參考嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "審查時空調的冷媒管跟給排水的管材有符合設計規範嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "設計時電梯機房的電線跟消防的管材有什麼法規要求", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "施工時弱電的線材跟給水的管材有符合法規嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "審查時消防的管材、電氣的接地、還有空調的冷媒管都有符合規範嗎？有圖可以看嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "設計時排煙的風管跟電線規格有什麼法規限制", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "施工時給排水管怎麼接？電線怎麼接？有什麼規範？有標準圖嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "審查時結構的鋼材、消防的管材、還有電線都有符合法規嗎？有圖可以看嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
