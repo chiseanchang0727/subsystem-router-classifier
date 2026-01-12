@@ -72,21 +72,7 @@ def calculate_sample_size(
     return int(round(n_adjusted))
 
 
-def load_dataset(file_path: str) -> List[Dict[str, Any]]:
-    """Load dataset from JSONL file, preserving line numbers."""
-    samples = []
-    with open(file_path, 'r', encoding='utf-8') as f:
-        for line_num, line in enumerate(f, start=1):
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                sample = json.loads(line)
-                sample['_line_number'] = line_num
-                samples.append(sample)
-            except json.JSONDecodeError as e:
-                print(f"Warning: Skipping invalid JSON at line {line_num}: {e}")
-    return samples
+from utils.data_loader import load_dataset
 
 
 def sample_dataset(
@@ -188,6 +174,7 @@ def export_sampled_data(
 
 # Example usage
 if __name__ == '__main__':
+
     # Example 1: Calculate sample size
     print("Sample Size Calculation:")
     print("=" * 50)

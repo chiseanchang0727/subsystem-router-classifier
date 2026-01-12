@@ -62,3 +62,19 @@ This repo is designed to answer:
 - How much **training data** is actually needed?
 - How stable are predictions across **paraphrases**?
 - Where do **misroutes** occur?
+
+---
+
+## Usage
+
+### Synthetic Validation
+
+Run distribution analysis:
+```bash
+uv run -m synthetic_validation.distribution_analysis
+```
+
+Run sampling and export:
+```bash
+uv run -m synthetic_validation.sampling_and_export
+```
