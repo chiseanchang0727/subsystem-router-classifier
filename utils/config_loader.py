@@ -42,6 +42,7 @@ class TrainingConfig(BaseModel):
     gradient_accumulation_steps: int
     save_steps: int
     save_total_limit: int
+    model_path: str
 
 
 def load_training_config(config_path: str = "train/training_config.yml") -> TrainingConfig:

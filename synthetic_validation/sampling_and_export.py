@@ -25,7 +25,7 @@ def count_samples_in_jsonl(file_path: str) -> int:
 
 def calculate_sample_size(
     population_size: Optional[int] = None,
-    dataset_file: str = "data/synthetic_data.jsonl",
+    dataset_file: str = "data/train.jsonl",
     confidence_level: float = 0.95,
     margin_of_error: float = 0.05,
     expected_correctness: float = 0.5
@@ -41,7 +41,7 @@ def calculate_sample_size(
     
     Args:
         population_size: Total number of samples in population (N). If None, reads from dataset_file.
-        dataset_file: Path to JSONL file to count samples from (default: "data/synthetic_data.jsonl")
+        dataset_file: Path to JSONL file to count samples from (default: "data/train.jsonl")
         confidence_level: Confidence level (default 0.95 for 95%)
         margin_of_error: Desired margin of error (e, default 0.05 for ±5%)
         expected_correctness: Expected correctness rate (p, default 0.5 for worst-case)
@@ -76,7 +76,7 @@ from utils.data_loader import load_dataset
 
 
 def sample_dataset(
-    dataset_file: str = "data/synthetic_data.jsonl",
+    dataset_file: str = "data/train.jsonl",
     sample_size: Optional[int] = None,
     confidence_level: float = 0.95,
     margin_of_error: float = 0.05,
@@ -179,13 +179,13 @@ if __name__ == '__main__':
     print("Sample Size Calculation:")
     print("=" * 50)
     n = calculate_sample_size(
-        dataset_file="data/synthetic_data.jsonl",
+        dataset_file="data/train.jsonl",
         confidence_level=0.95,
         margin_of_error=0.05,
         expected_correctness=0.5
     )
-    population_size = count_samples_in_jsonl("data/synthetic_data.jsonl")
-    print(f"Population size: {population_size} (from data/synthetic_data.jsonl)")
+    population_size = count_samples_in_jsonl("data/train.jsonl")
+    print(f"Population size: {population_size} (from data/train.jsonl)")
     print(f"Confidence level: 95%")
     print(f"Margin of error: ±5%")
     print(f"Required sample size: {n}")
@@ -195,7 +195,7 @@ if __name__ == '__main__':
     print("Sampling Dataset:")
     print("=" * 50)
     sampled = sample_dataset(
-        dataset_file="data/synthetic_data.jsonl",
+        dataset_file="data/train.jsonl",
         sample_size=n,
         random_seed=42
     )

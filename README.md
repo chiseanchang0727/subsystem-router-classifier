@@ -78,3 +78,24 @@ Run sampling and export:
 ```bash
 uv run -m synthetic_validation.sampling_and_export
 ```
+
+### Data Export
+
+Export train.jsonl and test.jsonl to CSV:
+```bash
+uv run -m data.export_to_csv
+```
+
+### Training
+
+Train the model:
+```bash
+uv run -m train.main
+```
+
+### Inference
+
+Run inference on test data:
+```bash
+uv run inference
+```

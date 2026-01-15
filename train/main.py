@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from pathlib import Path
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer, AutoModelForMaskedLM
@@ -95,29 +96,51 @@ def main(config: TrainingConfig, train_data, val_data   ):
             )
             train_loss += loss
     
-    train_loss /= len(train_loader)
+        train_loss /= len(train_loader)
 
-    # -------- VALIDATION --------
-    val_loss = 0.0
+        # -------- VALIDATION --------
+        val_loss = 0.0
 
-    for batch in tqdm(val_loader):
-        loss = val_step(
-            model=model,
-            batch=batch,
-            loss_fn=loss_fn,
-            device=device
+        for batch in tqdm(val_loader):
+            loss = val_step(
+                model=model,
+                batch=batch,
+                loss_fn=loss_fn,
+                device=device
+            )
+            val_loss += loss
+
+        val_loss /= len(val_loader)
+
+        
+        print(
+            f"Epoch {epoch} | "
+            f"Train Loss: {train_loss:.4f} | "
+            f"Val Loss: {val_loss:.4f}"
         )
-        val_loss += loss
 
-    val_loss /= len(val_loader)
-
+    # Save model and tokenizer
+    model_path = Path(config.model_path)
+    model_path.parent.mkdir(parents=True, exist_ok=True)
     
-    print(
-        f"Epoch {epoch} | "
-        f"Train Loss: {train_loss:.4f} | "
-        f"Val Loss: {val_loss:.4f}"
-    )
-
+    # Save model state dict
+    torch.save(model.state_dict(), model_path / "pytorch_model.bin")
+    
+    # Save tokenizer
+    tokenizer.save_pretrained(model_path)
+    
+    # Save model config (for inference)
+    import json
+    with open(model_path / "model_config.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "model_name": config.model_name,
+            "num_labels": config.num_labels,
+            "pooling": config.pooling,
+            "drop_out": config.drop_out,
+        }, f, indent=2, ensure_ascii=False)
+    
+    print(f"Model saved to {model_path}")
+    
     return model, tokenizer
 
 if __name__ == "__main__":

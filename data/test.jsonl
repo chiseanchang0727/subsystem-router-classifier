@@ -1,0 +1,5 @@
+{"query": "鋁合金跟不鏽鋼的強度比較", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "給水系統的法規標準有哪些", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}
+{"query": "施工階段，空調風管要用什麼材料？規範有要求嗎", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 1, "pure_regulation_lookup": 0, "acquire_image_example": 0}}
+{"query": "想看一下電梯鋼索的實物照片", "subsystems": {"material_knowledge": 0, "causal_regulation_lookup": 0, "pure_regulation_lookup": 0, "acquire_image_example": 1}}
+{"query": "鋁合金窗框跟塑鋼窗框哪個比較好？法規上有什麼差異", "subsystems": {"material_knowledge": 1, "causal_regulation_lookup": 0, "pure_regulation_lookup": 1, "acquire_image_example": 0}}

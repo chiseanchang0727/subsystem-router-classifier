@@ -12,7 +12,7 @@ from utils.data_loader import load_dataset
 
 
 def analyze_dataset_distribution(
-    dataset_file: str = "data/synthetic_data.jsonl"
+    dataset_file: str = "data/train.jsonl"
 ) -> Dict[str, Any]:
     """
     Analyze the distribution of samples by subsystem types.
