@@ -1,15 +1,7 @@
 from torch.utils.data import Dataset
 import torch
+from train.labels import LABELS
 
-LABELS = [
-    "material_knowledge",
-    "causal_regulation_lookup",
-    "pure_regulation_lookup",
-    "acquire_image_example",
-]
-
-label2id = {l: i for i, l in enumerate(LABELS)}
-id2label = {i: l for l, i in label2id.items()}
 NUM_LABELS = len(LABELS)
 
 class BuildDataset(Dataset):

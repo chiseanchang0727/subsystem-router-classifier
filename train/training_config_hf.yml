@@ -1,0 +1,18 @@
+training:
+  backend: hf
+  data_path: "data/train.jsonl"
+  model_name: "bert-base-chinese"
+  num_labels: 4
+  pooling: "auto"
+  drop_out: 0.1
+  max_length: 64
+  batch_size: 16
+  epochs: 1
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  adam_epsilon: 1e-8
+  warmup_steps: 0
+  gradient_accumulation_steps: 1
+  save_steps: 10000
+  save_total_limit: 10
+  model_path: "models/hf_trained_model"

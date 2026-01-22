@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, Any
+from typing import Dict, Any, Literal
 import yaml
 from pydantic import BaseModel
 
@@ -27,6 +27,7 @@ def load_config(config_path: str) -> Dict[str, Any]:
 
 class TrainingConfig(BaseModel):
     """Training configuration model."""
+    backend: Literal["pt", "hf"]
     data_path: str
     model_name: str
     num_labels: int
