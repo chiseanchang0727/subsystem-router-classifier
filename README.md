@@ -76,26 +76,36 @@ uv run -m synthetic_validation.distribution_analysis
 
 Run sampling and export:
 ```bash
-uv run -m synthetic_validation.sampling_and_export
+uv run synthetic_validation/sampling_and_export.py
 ```
 
 ### Data Export
 
 Export train.jsonl and test.jsonl to CSV:
 ```bash
-uv run -m data.export_to_csv
+uv run data/export_to_csv.py
 ```
 
 ### Training
 
 Train the model:
+- HF-based model
 ```bash
-uv run -m train.main
+uv run train/main.py hf
+```
+- PyTorch-based model
+```bash
+uv run train/main.py pt
 ```
 
 ### Inference
 
 Run inference on test data:
+- HF-based model
 ```bash
-uv run inference
+uv run inference/hf_model.py
+```
+- PyTorch-based model
+```bash
+uv run inference/pt_model.py
 ```
